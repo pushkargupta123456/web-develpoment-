@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fashionista | Fashion E‑Commerce</title>
+  <link rel="stylesheet" href="capstone.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <!-- HEADER / NAVBAR -->
+  <header class="header">
+    <div class="container nav">
+      <div class="logo">Fashionista</div>
+
+      <div class="nav-center">
+        <nav class="nav-links">
+          <a href="#new-arrivals">New Arrivals</a>
+          <a href="#men">Men</a>
+          <a href="#women">Women</a>
+          <a href="#accessories">Accessories</a>
+        </nav>
+        <div class="search-box">
+          <input
+            type="text"
+            placeholder="Search for products..."
+            aria-label="Search for products"
+          />
+        </div>
+      </div>
+
+      <div class="nav-icons">
+        <button class="icon-btn" aria-label="Search">
+          🔍
+        </button>
+        <button class="icon-btn" aria-label="Cart">
+          🛒
+          <span class="badge">2</span>
+        </button>
+        <button class="icon-btn" aria-label="Account">
+          👤
+        </button>
+        <a href="#" class="btn btn-outline small">Login</a>
+      </div>
+
+      <!-- Mobile menu button -->
+      <button class="burger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <p class="badge-text">Summer 2024 Collection</p>
+        <h1>Summer Sale is Here!</h1>
+        <p class="hero-subtitle">
+          Up to <span class="highlight">50% off</span> on selected styles. Refresh
+          your wardrobe with the latest trends for every occasion.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#products" class="btn">Shop Now</a>
+          <a href="#best-sellers" class="btn btn-outline">View Best Sellers</a>
+        </div>
+
+        <div class="flash-sale">
+          <div class="flash-left">
+            <span class="flash-label">⚡ Flash Sale</span>
+            <p>Extra 20% OFF on all summer styles</p>
+          </div>
+          <div class="countdown">
+            <div class="time-box">
+              <span class="time">02</span>
+              <span class="time-label">Hours</span>
+            </div>
+            <span class="colon">:</span>
+            <div class="time-box">
+              <span class="time">15</span>
+              <span class="time-label">Minutes</span>
+            </div>
+            <span class="colon">:</span>
+            <div class="time-box">
+              <span class="time">42</span>
+              <span class="time-label">Seconds</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="trust-row">
+          <span>✓ Free Shipping over $75</span>
+          <span>✓ 30‑Day Easy Returns</span>
+          <span>✓ Secure Checkout</span>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <div class="hero-card">
+          <p class="hero-tag">New In</p>
+          <h2>Minimal Streetwear</h2>
+          <p>Clean silhouettes, neutral tones, everyday comfort.</p>
+          <button class="btn small full-width">Explore Collection</button>
+        </div>
+        <div class="hero-secondary-card">
+          <p>Best Seller</p>
+          <h3>Classic Denim Jacket</h3>
+          <span class="price">$79.99</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FILTERS + PRODUCTS -->
+  <section class="section" id="products">
+    <div class="container">
+      <div class="section-header">
+        <h2>Explore Our Collection</h2>
+        <p>Filter by category, price, and color to find your perfect style.</p>
+      </div>
+
+      <div class="layout">
+        <!-- FILTERS -->
+        <aside class="filters">
+          <h3>Filters</h3>
+
+          <div class="filter-group">
+            <h4>Category</h4>
+            <label>
+              <input type="checkbox" /> Men
+            </label>
+            <label>
+              <input type="checkbox" /> Women
+            </label>
+            <label>
+              <input type="checkbox" /> Accessories
+            </label>
+          </div>
+
+          <div class="filter-group">
+            <h4>Price</h4>
+            <label>
+              <input type="checkbox" /> Under $50
+            </label>
+            <label>
+              <input type="checkbox" /> $50 - $100
+            </label>
+            <label>
+              <input type="checkbox" /> $100+
+            </label>
+          </div>
+
+          <div class="filter-group">
+            <h4>Color</h4>
+            <label>
+              <input type="checkbox" /> Black
+            </label>
+            <label>
+              <input type="checkbox" /> White
+            </label>
+            <label>
+              <input type="checkbox" /> Blue
+            </label>
+          </div>
+
+          <button class="btn small full-width">Apply Filters</button>
+        </aside>
+
+        <!-- PRODUCT GRID -->
+        <div class="products-grid">
+          <article class="product-card" id="men">
+            <div class="product-tag">Men</div>
+            <h3>Classic Denim Jacket</h3>
+            <p class="product-desc">Timeless fit, premium denim, everyday essential.</p>
+            <div class="product-bottom">
+              <span class="price">$79.99</span>
+              <button class="btn small">Add to Cart</button>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-tag">Men</div>
+            <h3>White Sneakers</h3>
+            <p class="product-desc">Clean, versatile, and perfect for daily wear.</p>
+            <div class="product-bottom">
+              <span class="price">$59.99</span>
+              <button class="btn small">Add to Cart</button>
+            </div>
+          </article>
+
+          <article class="product-card" id="women">
+            <div class="product-tag">Women</div>
+            <h3>Summer Dress</h3>
+            <p class="product-desc">Lightweight fabric with a flattering silhouette.</p>
+            <div class="product-bottom">
+              <span class="price">$49.99</span>
+              <button class="btn small">Add to Cart</button>
+            </div>
+          </article>
+
+          <article class="product-card" id="accessories">
+            <div class="product-tag">Accessories</div>
+            <h3>Leather Handbag</h3>
+            <p class="product-desc">Structured design with premium leather finish.</p>
+            <div class="product-bottom">
+              <span class="price">$120.00</span>
+              <button class="btn small">Add to Cart</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BEST SELLERS -->
+  <section class="section alt-bg" id="best-sellers">
+    <div class="container">
+      <div class="section-header">
+        <h2>Best Sellers</h2>
+        <p>Most‑loved pieces picked by our customers.</p>
+      </div>
+
+      <div class="products-row">
+        <article class="mini-card">
+          <h3>Denim Jacket</h3>
+          <span class="price">$79.99</span>
+          <button class="btn small full-width">Add to Cart</button>
+        </article>
+
+        <article class="mini-card">
+          <h3>White Sneakers</h3>
+          <span class="price">$59.99</span>
+          <button class="btn small full-width">Add to Cart</button>
+        </article>
+
+        <article class="mini-card">
+          <h3>Summer Dress</h3>
+          <span class="price">$49.99</span>
+          <button class="btn small full-width">Add to Cart</button>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>What Our Customers Say</h2>
+        <p>Real reviews from real Fashionista shoppers.</p>
+      </div>
+
+      <div class="testimonials">
+        <article class="testimonial">
+          <p class="testimonial-text">
+            “Absolutely love the quality and fast shipping. My new favorite store.”
+          </p>
+          <p class="testimonial-name">Emily R.</p>
+        </article>
+
+        <article class="testimonial">
+          <p class="testimonial-text">
+            “Great selection and amazing deals. The flash sale was a steal.”
+          </p>
+          <p class="testimonial-name">James K.</p>
+        </article>
+
+        <article class="testimonial">
+          <p class="testimonial-text">
+            “Customer service was super helpful. Will definitely shop again.”
+          </p>
+          <p class="testimonial-name">Sophia L.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="section newsletter">
+    <div class="container newsletter-inner">
+      <div>
+        <h2>Stay in the Loop</h2>
+        <p>Sign up for exclusive offers, new arrivals, and style inspiration.</p>
+      </div>
+      <form class="newsletter-form">
+        <input
+          type="email"
+          placeholder="Your email address"
+          required
+          aria-label="Your email address"
+        />
+        <button type="submit" class="btn">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <h3>Fashionista</h3>
+        <p>Curated fashion for everyday confidence.</p>
+        <div class="socials">
+          <a href="#">📸</a>
+          <a href="#">📘</a>
+          <a href="#">🐦</a>
+          <a href="#">📌</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Account</h4>
+        <a href="#">Login</a>
+        <a href="#">Register</a>
+        <a href="#">Order History</a>
+        <a href="#">Wishlist</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Help</h4>
+        <a href="#">Contact Us</a>
+        <a href="#">Shipping</a>
+        <a href="#">Returns</a>
+        <a href="#">FAQs</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Policies</h4>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Cookie Policy</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2024 Fashionista. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
