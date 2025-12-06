@@ -1,0 +1,287 @@
+/* --- Corrected Color Variables based on the image --- */
+:root {
+    --primary-color: #1a4a8d; /* Deep Blue used for skill cards, footer, and navigation */
+    --secondary-color: #f8f8f8; /* Very light gray/off-white background */
+    --text-color-dark: #333;
+    --text-color-light: #fff;
+    --heading-color: #2c3e50; /* Darker text for titles */
+    --highlight-color: #d13a48; /* Red for the 'Full Stack Developer' text */
+    --light-section-bg: #fff; /* Pure white for the project/contact card backgrounds */
+    --body-text-color: #555;
+}
+
+/* Basic Reset and Typography */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: var(--body-text-color);
+    background-color: var(--secondary-color);
+}
+
+h1, h2, h3 {
+    color: var(--heading-color);
+    margin-bottom: 0.5em;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+section {
+    padding: 40px 15%; /* Increased horizontal padding slightly */
+    margin-bottom: 20px;
+}
+
+/* --- Header & Navigation --- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 15%;
+    background-color: var(--primary-color);
+    color: var(--text-color-light);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    font-weight: 400;
+    padding: 5px 0; /* Aligning with the image's minimal link styling */
+    border-bottom: 2px solid transparent; /* For hover effect */
+    transition: border-bottom 0.3s;
+}
+
+nav ul li a:hover {
+    border-bottom: 2px solid var(--text-color-light);
+}
+
+/* --- Hero Section --- */
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.hero-text p {
+    font-size: 1.2em;
+    margin: 5px 0;
+    color: var(--heading-color); /* Darker text for "Hi, I am" */
+}
+
+.hero-text h1 {
+    font-size: 3.5em;
+    font-weight: 700;
+    color: var(--highlight-color); /* The distinctive red color */
+    line-height: 1.1;
+    margin-top: 0;
+}
+
+.hero-text .subtitle {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.hero-image-container {
+    flex-shrink: 0;
+    margin-left: 40px;
+}
+
+/* Avatar placeholder styling */
+.avatar {
+    width: 150px;
+    height: 150px;
+    background-color: #eee; /* Light gray background for illustration */
+    border-radius: 50%;
+    /* Create a subtle border similar to the image's style */
+    box-shadow: 0 0 0 5px #dde3f0, inset 0 0 0 5px var(--primary-color); 
+    background-size: cover;
+    background-position: center;
+}
+
+/* --- Section Headings (for About, Skills, Projects, Contact) --- */
+.about-section h2, 
+.skills-section h2, 
+.projects-section h2, 
+.contact-section h2 {
+    font-size: 2em;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: var(--heading-color);
+}
+
+/* --- Skills Section --- */
+.skills-container {
+    display: flex;
+    gap: 15px;
+}
+
+.skill-card {
+    flex: 1;
+    min-width: 150px;
+    padding: 10px 15px;
+    background-color: var(--primary-color);
+    color: var(--text-color-light);
+    border-radius: 4px; /* Slightly squarer corners than before */
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.skill-card h3 {
+    color: var(--text-color-light);
+    margin-bottom: 2px;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.skill-card p {
+    font-size: 0.8em;
+    font-weight: 300;
+    opacity: 0.8;
+}
+
+
+/* --- Projects Section --- */
+.project-card {
+    background-color: var(--light-section-bg);
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    padding: 40px 30px; /* Larger padding to match the image's spacing */
+    margin-bottom: 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.project-card h3 {
+    color: var(--heading-color);
+    margin-bottom: 5px;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.project-card p {
+    font-size: 0.9em;
+    color: #777;
+}
+
+/* --- Contact Me Section --- */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    background-color: var(--light-section-bg);
+    padding: 30px;
+    border-radius: 4px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 0.9em;
+    color: #333;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.contact-form button {
+    background-color: var(--primary-color);
+    color: var(--text-color-light);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+.contact-form button:hover {
+    background-color: #14376b; /* Slightly darker blue on hover */
+}
+
+/* --- Footer --- */
+footer {
+    text-align: center;
+    padding: 15px 15%;
+    background-color: var(--primary-color);
+    color: var(--text-color-light);
+    font-size: 0.8em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.back-to-top {
+    color: var(--text-color-light);
+    opacity: 0.8;
+    /* Remove border for cleaner look, like the image */
+    padding: 5px 0;
+}
+
+/* --- Responsiveness --- */
+@media (max-width: 768px) {
+    section {
+        padding: 30px 5%;
+    }
+    
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .hero-text h1 {
+        font-size: 2.5em;
+    }
+
+    .hero-image-container {
+        margin: 30px 0 0 0;
+    }
+
+    .skills-container {
+        flex-direction: column;
+    }
+
+    /* Keep navbar simple on mobile */
+    .navbar {
+        flex-direction: column;
+        padding: 10px 5%;
+    }
+    nav ul {
+        margin-top: 5px;
+        font-size: 0.9em;
+    }
+}
